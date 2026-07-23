@@ -1,0 +1,131 @@
+/* ========================================================
+   DARK MODERN PALETTE:
+   - Deep Black / Dark Slate Background: #0f172a
+   - Card Backgrounds:                   #1e293b
+   - Fuchsia Accent (Pop / Neon Glow):   #d946ef
+   - Steel Grey Text & Subtitles:        #94a3b8 / #64748b
+   - Pure White Primary Text:            #f8fafc
+======================================================== */
+
+/* 1. Global Page Styles (Type Selector) */
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #0f172a;
+  color: #f8fafc;
+  margin: 0;
+  padding: 30px 20px;
+  line-height: 1.6;
+}
+
+/* Headings & Text (Type Selectors) */
+h1, h2 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  color: #d946ef;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+h3 {
+  color: #f8fafc;
+  font-size: 1.1rem;
+}
+
+p {
+  color: #cbd5e1;
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+/* 2. Header Banner (ID Selector) */
+#main-header {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-top: 4px solid #d946ef;
+  border-radius: 12px;
+  padding: 28px 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  box-shadow: 0 10px 25px -5px rgba(217, 70, 239, 0.15);
+}
+
+#main-header h1 {
+  color: #f8fafc;
+  margin: 0 0 16px 0;
+  font-size: 1.8rem;
+}
+
+/* Navigation Links (Class Selector) */
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.nav-menu a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.nav-menu a:hover {
+  color: #d946ef;
+  text-shadow: 0 0 8px rgba(217, 70, 239, 0.6);
+}
+
+/* 3. Section Cards (Class Selector) */
+.card {
+  background-color: #1e293b;
+  border-left: 4px solid #d946ef;
+  border-top: 1px solid #334155;
+  border-right: 1px solid #334155;
+  border-bottom: 1px solid #334155;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 16px;
+}
+
+/* 4. Lists (Class Selectors) */
+.styled-list, .favorites-list {
+  padding-left: 20px;
+  margin-top: 10px;
+  border-top: 1px solid #334155;
+  padding-top: 14px;
+}
+
+li {
+  color: #94a3b8;
+  margin-bottom: 8px;
+}
+
+li::marker {
+  color: #d946ef;
+  font-weight: bold;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #64748b;
+  font-size: 0.9rem;
+}
